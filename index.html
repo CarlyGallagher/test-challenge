@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <title>tofu-test</title>
+</head>
+
+<body>
+    <div id="card">
+        <!-- this is the main open page -->
+        <div id="start-Quiz">
+            <h1>Coding Quiz!</h1>
+            <p>Answer the following 5 questions within the time limit. Keep in mind that wrong
+                answers will subtract 10 seconds from the timer!</p>
+            <button id="start-QZ">Start Quiz</button>
+        </div>
+        <!-- this area is the test -->
+        <section class="test">
+            <div id="question-container" class="hide">
+                <h2 id="question"> question</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+        </section>
+        <!-- this area is the initals page -->
+        <div id="end-quiz" class="hide">
+            <h3>All Done!</h3>
+            <div>Final Score</div>
+            <div id="input-form">
+                <label for="initials">Enter Initials here:</label>
+                <input id="initials" type="text" placeholder="intials here"></input>
+                <button id="submit-score">submit</button>
+            </div>
+        </div>
+        <!-- final page/highscores -->
+        <div id="high-scores" class="hide">
+            <button id="quiz-again" class="hide">Take quiz again!</button>
+            <button id="clear-score" class="hide">clear Highscores</button>
+        </div>
+    </div>
+    </section>
+    <!-- outside of the container. Only constant -->
+    <section class="top-page">
+        <div class="scores">
+            <h3 href="#" class="score-text">
+                <div href="#" src="high-scores">View Highscores</div>
+            </h3>
+        </div>
+
+        <div class="timer">
+            <div class="timer-text"></div>
+            <h3>Time:</h3>
+        </div>
+    </section>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
